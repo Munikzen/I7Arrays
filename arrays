@@ -1,0 +1,37 @@
+#if !defined(ARRAYS)
+#define ARRAYS
+#include <iostream>
+using namespace std;
+const int MAX = 10;
+
+
+/** @brief Lee la cantidad de elementos del array
+ * @returns n cantidad de elementos
+ */
+int leeCantidadElem();
+
+/** @brief Ingresa un valor dado por el usuario al arreglo
+ * @param cant cantidad de elementos en el array
+ * @param n arreglo
+ */
+void leeCadena(int cant,int n[]);
+
+/** @brief Imprime los elementos del arreglo
+ * @param cant cantidad de elementos en el array
+ * @param n arreglo
+ */
+void muestraCadena(int cant,int n[]);
+
+/** @brief Imprime los elementos del arreglo
+ * @param cant cantidad de elementos en el array
+ * @param A arreglo
+ */
+void insertarElemento(int cant, int A[]);
+
+/** @brief Imprime los elementos del arreglo
+ * @param cant cantidad de elementos en el array
+ * @param A arreglo
+ */
+void borrarElemento(int cant, int A[]);
+
+#endif
