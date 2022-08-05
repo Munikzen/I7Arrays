@@ -1,6 +1,10 @@
 # I7Arrays
 Entrega de I7 Arquitectura de computadoras UAM-C 2022
 
+Esta biblioteca nos va a permitir manejar un arreglo a través de 5 funciones, para poder utilizar estas, se pide al usuario que en su programa principal declare un int que pueda ayudarle a manejar las funciones de su programa y un arreglo. 
+
+Una biblioteca dinamica nos va a permitir usarla en diferentes ejecutables a la vez, mientras se añada en la cabecera en el codigo de nuestro programa, para que este funcionamiento se cumpla, nuestra biblioteca se debe agregar a las variables de entorno de nuestro sistema.
+
 Para compilar una biblioteca estatica debemos:
 
 1.	Primero debemos obtener el código objeto de los archivos que queremos, en este caso los comandos serían 
@@ -33,5 +37,3 @@ donde -fPIC sirve para indicarle al compilador que las direcciones de estos obje
 3.	para compilar el ejecutable con una biblioteca dinámica se usa el comando g++ .\main.cc -o executable -L .\lib\dinamic -l arrays donde -L es para indicar la ruta donde se encuentra la biblioteca que contiene las funciones que se están invocando y -l es para indicar el nombre de la biblioteca.
 
 4.	Finalmente se ejecuta el ejecutable para ambos casos, tanto para la biblioteca dinámica como para la estática con el comando .\executable.exe y después los parámetros que se usarán para el funcionamiento de la aplicación.
-
-
