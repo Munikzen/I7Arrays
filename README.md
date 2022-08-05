@@ -3,7 +3,7 @@ Entrega de I7 Arquitectura de computadoras UAM-C 2022
 
 Esta biblioteca nos va a permitir manejar un arreglo a través de 5 funciones, para poder utilizar estas, se pide al usuario que en su programa principal declare un int que pueda ayudarle a manejar las funciones de su programa y un arreglo. 
 
-Una biblioteca dinamica nos va a permitir usarla en diferentes ejecutables a la vez, mientras se añada en la cabecera en el codigo de nuestro programa, para que este funcionamiento se cumpla, nuestra biblioteca se debe agregar a las variables de entorno de nuestro sistema.
+Una biblioteca dinamica nos va a permitir usarla en diferentes ejecutables a la vez, mientras se añada en la cabecera en el codigo de nuestro programa, para que este funcionamiento se cumpla, nuestra biblioteca se debe agregar a las carpeta system32 de windows.
 
 Para compilar una biblioteca estatica debemos:
 
