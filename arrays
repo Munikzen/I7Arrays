@@ -28,7 +28,7 @@ void muestraCadena(int cant,int n[]);
  */
 void insertarElemento(int cant, int A[]);
 
-/** @brief Imprime los elementos del arreglo
+/** @brief Permite borrar un elemento del array
  * @param cant cantidad de elementos en el array
  * @param A arreglo
  */
