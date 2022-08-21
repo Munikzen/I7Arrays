@@ -36,3 +36,18 @@ donde -fPIC sirve para indicarle al compilador que las direcciones de estos obje
 3.	para compilar el ejecutable con una biblioteca dinámica se usa el comando g++ .\main.cc -o executable -L .\lib\dinamic -l arrays donde -L es para indicar la ruta donde se encuentra la biblioteca que contiene las funciones que se están invocando y -l es para indicar el nombre de la biblioteca.
 
 4.	Finalmente se ejecuta el ejecutable para ambos casos, tanto para la biblioteca dinámica como para la estática con el comando .\executable.exe y después los parámetros que se usarán para el funcionamiento de la aplicación.
+
+Arbol del directorio:
+.
+├── app
+├── include
+│   └── arrays
+├── lib
+│   └── static
+├── main.cc
+├── obj
+└── src
+    ├── .cc
+    ├── .cc
+    ├── .cc
+ 
