@@ -17,7 +17,7 @@ Tenemos que -c es para obtener el código objeto del archivo que se encuentra en
 
 2.	Posteriormente se utiliza el comando ar crs .\lib\static\arrays.lib .\obj\*.o que sirve para compactar los archivos objetos creados anteriormente en un único archivo .lib
 
-3.	Con el siguiente comando se realiza la compilación del ejecutable para una biblioteca estática g++ main.cc -o app\test -I .\lib\include -L .\lib\static -larrays donde main.cc es el archivo a compilar.
+3.	Con el siguiente comando se realiza la compilación del ejecutable para una biblioteca estática g++ .\main.cc -o executable -L . -I arrays donde main.cc es el archivo a compilar.
 
 4.	Finalmente se ejecuta el ejecutable con el comando .\app\test.exe
 
