@@ -62,4 +62,21 @@ Arbol del directorio:
 		
     		├── llenar.cc
 		
+ Para ejemplificar el siguiente codigo:
  
+ ~~~
+ int main()
+{
+    int n[5];
+
+    llenar(5, n, 3);
+    insertarElemento(5, n, 30, 2);
+    borrarElemento(5, n, 3);
+    for (int i = 0; i < 5; i++)
+    {
+        std::cout << "n[" << i << "]:" << n[i] << std::endl;
+    }
+
+    return 0;
+}
+~~~
