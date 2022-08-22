@@ -39,6 +39,7 @@ donde -fPIC sirve para indicarle al compilador que las direcciones de estos obje
 
 Arbol del directorio:
     *.
+	
 	├── app
 	
 	├── include
