@@ -37,10 +37,11 @@ donde -fPIC sirve para indicarle al compilador que las direcciones de estos obje
 
 4.	Finalmente se ejecuta el ejecutable para ambos casos, tanto para la biblioteca dinámica como para la estática con el comando .\executable.exe y después los parámetros que se usarán para el funcionamiento de la aplicación.
 
-Arbol del directorio:
+Arbol del directorio de la biblioteca estática:
 ~~~
 
 	├── app
+		├── test.exe
 	
 	├── include
 	
@@ -49,11 +50,20 @@ Arbol del directorio:
 	├── lib
 	
 	│   └── static
+			├── arrays.lib
 	
 	├── main.cc
 	
 	├── obj
 	
+	├── borrarElemento.cc
+		
+    		├── borrarElemento.o
+		
+    		├── insertarElemento.o
+		
+    		├── llenar.o
+		
 	└── src
 	
     		├── borrarElemento.cc
@@ -63,7 +73,36 @@ Arbol del directorio:
     		├── llenar.cc
 ~~~
 		
- Para ejemplificar el uso de la biblioteca vamos a utilizar el siguiente codigo:
+Arbol del directorio de la biblioteca dinamica:
+~~~
+	├── include
+	
+	│   └── arrays
+	
+	├── main.cc
+	
+	├── obj
+		
+    		├── borrarElemento.o
+		
+    		├── insertarElemento.o
+		
+    		├── llenar.o
+		
+	└── src
+	
+    		├── borrarElemento.cc
+		
+    		├── insertarElemento.cc
+		
+    		├── llenar.cc
+	
+	└── arrays.dll
+	└── test.exe
+	
+~~~
+
+Para ejemplificar el uso de la biblioteca vamos a utilizar el siguiente codigo:
  
  ~~~
  int main()
@@ -73,10 +112,6 @@ Arbol del directorio:
     llenar(5, n, 3);
     insertarElemento(5, n, 30, 2);
     borrarElemento(5, n, 3);
-    for (int i = 0; i < 5; i++)
-    {
-        std::cout << "n[" << i << "]:" << n[i] << std::endl;
-    }
 
     return 0;
 }
@@ -85,4 +120,32 @@ Arbol del directorio:
 Para el funcionamiento correcto de la biblioteca debemos declarar un arreglo de numeros enteros de cualquier tamaño, para este ejemplo vamos a declarar un arreglo de nombre n de tamaño 5.
  ~~~
  int n[5];
+  ~~~
+ -La funcion llenar pide 3 parametros para funcionar, un entero del tamaño del arreglo a manipular, el arreglo de enteros a manipular y otro entero desde el cual va a comenzar a llenar secuencialmente el arreglo de uno en uno. Para este caso vamos a utilizar nuestro arreglo n y llenarlo a partir del numero 3.
+~~~
+ llenar(5, n, 3);
+  ~~~
+ Si imprimimos el contenido de este arreglo este tendria los siguientes elementos: 
+ ~~~
+ [3, 4, 5, 6, 7]
+  ~~~
+  
+  -La funcion insertarElemento pide 4 parametros para funcionar, un entero del tamaño del arreglo a manipular, el arreglo de enteros a manipular, un entero que es el elemento que queremos agregar al arreglo y otro entero que representa la posicion donde queremos añadir el anterior.
+  ~~~
+ insertarElemento(5, n, 30, 2);
+  ~~~
+  
+  Al correr la funcion, el arreglo tendria los siguientes elementos:
+   ~~~
+ [3, 4, 30, 6, 7]
+  ~~~
+  
+   -La funcion borrarElemento pide 3 parametros para funcionar, un entero del tamaño del arreglo a manipular, el arreglo de enteros a manipular y otro entero que representa la posicion donde queremos eliminar su valor.
+   ~~~
+ borrarElemento(5, n, 3);
+  ~~~
+  
+  Al correr la funcion, el arreglo tendria los siguientes elementos:
+   ~~~
+ [3, 4, 30, 7, 8]
   ~~~
