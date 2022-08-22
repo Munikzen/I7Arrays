@@ -62,7 +62,7 @@ Arbol del directorio:
 		
     		├── llenar.cc
 		
- Para ejemplificar el siguiente codigo:
+ Para ejemplificar el uso de la biblioteca vamos a utilizar el siguiente codigo:
  
  ~~~
  int main()
@@ -80,3 +80,8 @@ Arbol del directorio:
     return 0;
 }
 ~~~
+
+Para el funcionamiento correcto de la biblioteca debemos declarar un arreglo de numeros enteros de cualquier tamaño, para este ejemplo vamos a declarar un arreglo de nombre n de tamaño 5.
+ ~~~
+ int n[5];
+  ~~~
