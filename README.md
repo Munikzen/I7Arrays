@@ -38,7 +38,7 @@ donde -fPIC sirve para indicarle al compilador que las direcciones de estos obje
 4.	Finalmente se ejecuta el ejecutable para ambos casos, tanto para la biblioteca dinámica como para la estática con el comando .\executable.exe y después los parámetros que se usarán para el funcionamiento de la aplicación.
 
 Arbol del directorio:
-    *.
+    ~~~
 	
 	├── app
 	
@@ -61,6 +61,7 @@ Arbol del directorio:
     		├── insertarElemento.cc
 		
     		├── llenar.cc
+	~~~
 		
  Para ejemplificar el uso de la biblioteca vamos a utilizar el siguiente codigo:
  
