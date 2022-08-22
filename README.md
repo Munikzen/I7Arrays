@@ -11,7 +11,7 @@ Para compilar una biblioteca estatica debemos:
 
 g++ -c .\src\borrarElemento.cc -o .\obj\borrarElemento.o -I .\include
 g++ -c .\src\insertarElemento.cc -o .\obj\insertarElemento.o -I .\include
-g++ -c .\src\llenarCadena.cc -o .\obj\llenarCadena.o -I .\include
+g++ -c .\src\llenarCadena.cc -o .\obj\llenar.o -I .\include
 
 Tenemos que -c es para obtener el código objeto del archivo que se encuentra en la carpeta .\src\nombre del archivo.cc, mientras que -o indica la salida, ósea que la salida es se guardará en el directorio .\obj\Nombre del archivo.o, y -I indica los directorios donde se encuentran las cabeceras.
 
@@ -27,7 +27,7 @@ Para compilar una biblioteca dinamica debemos:
 
 g++ -c .\src\borrarElemento.cc -o .\obj\borrarElemento.o -fPIC
 g++ -c .\src\insertarElemento.cc -o .\obj\insertarElemento.o -fPIC
-g++ -c .\src\llenarCadena.cc -o .\obj\llenarCadena.o -fPIC
+g++ -c .\src\llenarCadena.cc -o .\obj\llenar.o -fPIC
 
 donde -fPIC sirve para indicarle al compilador que las direcciones de estos objetos no van a depender del código que invoque esta biblioteca.
 
