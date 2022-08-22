@@ -98,7 +98,7 @@ Arbol del directorio de la biblioteca dinamica:
     		├── llenar.cc
 	
 	└── arrays.dll
-	└── test.exe
+	└── executable.exe
 	
 ~~~
 
