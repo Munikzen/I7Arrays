@@ -1,0 +1,32 @@
+#if !defined(ARRAYS)
+#define ARRAYS
+
+/** @brief Llena el arreglo secuencialmente de uno en un valor, a partir de un valor entero
+ * inicial dado por el usuario
+ * @author PABLO ROBERTO GARCIA TORRES
+ * @param size tamaño del arreglo
+ * @param n arreglo
+ * @param eleminic primer valor que se agregará al arreglo
+ */
+void llenar(int size,int n[], int eleminic);
+
+/** @brief Inserta un elemento indicado por el usuario al arreglo
+ * en la posición indicada por el mismo.
+ * @author BRANDON CHAVEZ SALAVERRIA
+ * @param size Tamaño del arreglo.
+ * @param n Arreglo.
+ * @param pos Poscion donde se desea insertar el elemento al arreglo.
+ */
+void insertarElemento(int size, int A[], int elem, int pos);
+
+/** @brief Borra el elemento en una posición dada por el usuario y recorre
+ * los elementos en una posición hacia la izquierda, después la última posición 
+ * del arreglo es llenada con el elemento posterior a la sucesión que lleva el arreglo.
+ * @author JHOAN DANIEL ARENAS REYES
+ * @param size Tamaño del arreglo.
+ * @param A Arreglo.
+ * @param pos Posición del elemento a borrar.
+ */
+void borrarElemento(int size, int A[], int pos);
+
+#endif
