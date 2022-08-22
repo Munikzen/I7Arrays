@@ -40,14 +40,25 @@ donde -fPIC sirve para indicarle al compilador que las direcciones de estos obje
 Arbol del directorio:
     *.
 	├── app
+	
 	├── include
+	
 	│   └── arrays
+	
 	├── lib
+	
 	│   └── static
+	
 	├── main.cc
+	
 	├── obj
+	
 	└── src
+	
     		├── .cc
+		
     		├── .cc
+		
     		├── .cc
+		
  
